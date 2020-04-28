@@ -37,41 +37,55 @@
 		}
 	})
 </script>
+<body>
 
-{#if board}
 
-{#each _items as item (item.id)}
-
-<div class="container">
+<div class="appbar svelte-no08ro"><h1 class="title svelte-no08ro">Svelte Todo App</h1></div> <div class="container svelte-u5r16g"><div class="container-fluid">
   <div class="row">
-<div class="board wrapper card">
-		<div class="card-body">
-			<div class="meta">
-				<h5 class="card-title">
-					{board.title}
-				</h5>
-				<span class="count text-secondary">{_items.length}</span>
-			</div>
-			<div id={board.id} class="item-list" bind:this={list}>
-				<Item
-					{item}
-					on:update={handleUpdateItem}
-					on:remove={handleRemoveItem}
-				/>
-  </div>
-</div>
+<div class="item svelte-u5r16g"><div class="board wrapper card svelte-ylyubz"><div class="card-body"><div class="meta svelte-ylyubz"><h5 class="card-title">Planning</h5> <span class="count text-secondary">2</span></div> <div id="df323b5d-69a4-456c-8ccf-241f537eb729" class="item-list svelte-ylyubz"><div id="950462c1-0e38-4281-aa83-42e0ac252487" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">자료 조사하기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div><div id="ba5bfdda-9cbf-4aed-abc1-cecffcc3b4c1" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">교양책 읽기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div></div> <div class="card-action"><button class="add-item btn svelte-ylyubz"><i class="fas fa-plus" aria-hidden="true"></i></button></div></div></div> </div>
+        <div class="row">
+    
+            
+  </div></div></div>
 
-	
 
-			{/each}
-			</div>
-			<div class="card-action">
-				<button class="add-item btn" on:click={handleAddItem}><i class="fas fa-plus"></i></button>
-			</div>
-		</div>
-	</div>
-{/if}
+</div><body>
 
+
+ <div class="container svelte-u5r16g"><div class="container-fluid">
+  <div class="row">
+<div class="item svelte-u5r16g"><div class="board wrapper card svelte-ylyubz"><div class="card-body"><div class="meta svelte-ylyubz"><h5 class="card-title">Planning</h5> <span class="count text-secondary">2</span></div> <div id="df323b5d-69a4-456c-8ccf-241f537eb729" class="item-list svelte-ylyubz"><div id="950462c1-0e38-4281-aa83-42e0ac252487" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">자료 조사하기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div><div id="ba5bfdda-9cbf-4aed-abc1-cecffcc3b4c1" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">교양책 읽기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div></div> <div class="card-action"><button class="add-item btn svelte-ylyubz"><i class="fas fa-plus" aria-hidden="true"></i></button></div></div></div> </div>
+        <div class="row">
+    
+            
+  </div></div></div>
+
+
+</div><body>
+
+
+ <div class="container svelte-u5r16g"><div class="container-fluid">
+  <div class="row">
+<div class="item svelte-u5r16g"><div class="board wrapper card svelte-ylyubz"><div class="card-body"><div class="meta svelte-ylyubz"><h5 class="card-title">Planning</h5> <span class="count text-secondary">2</span></div> <div id="df323b5d-69a4-456c-8ccf-241f537eb729" class="item-list svelte-ylyubz"><div id="950462c1-0e38-4281-aa83-42e0ac252487" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">자료 조사하기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div><div id="ba5bfdda-9cbf-4aed-abc1-cecffcc3b4c1" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">교양책 읽기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div></div> <div class="card-action"><button class="add-item btn svelte-ylyubz"><i class="fas fa-plus" aria-hidden="true"></i></button></div></div></div> </div>
+        <div class="row">
+    
+            
+  </div></div></div>
+
+
+</div><body>
+
+
+ <div class="container svelte-u5r16g"><div class="container-fluid">
+  <div class="row">
+<div class="item svelte-u5r16g"><div class="board wrapper card svelte-ylyubz"><div class="card-body"><div class="meta svelte-ylyubz"><h5 class="card-title">Planning</h5> <span class="count text-secondary">2</span></div> <div id="df323b5d-69a4-456c-8ccf-241f537eb729" class="item-list svelte-ylyubz"><div id="950462c1-0e38-4281-aa83-42e0ac252487" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">자료 조사하기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div><div id="ba5bfdda-9cbf-4aed-abc1-cecffcc3b4c1" class="item card p-1 mb-2 shadow-sm svelte-baqzyi"><div class="drag-handle pointer svelte-baqzyi"><i class="fas fa-grip-lines" aria-hidden="true"></i></div> <span class="item-title pointer svelte-baqzyi">교양책 읽기</span> <div class="item-action"><button class="item-btn btn svelte-baqzyi"><i class="far fa-edit" aria-hidden="true"></i></button> <button class="item-btn btn svelte-baqzyi"><i class="far fa-trash-alt" aria-hidden="true"></i></button></div></div></div> <div class="card-action"><button class="add-item btn svelte-ylyubz"><i class="fas fa-plus" aria-hidden="true"></i></button></div></div></div> </div>
+        <div class="row">
+    
+            
+  </div></div></div>
+
+
+</div></body></body></body></body>
 <style>
 	.board.wrapper {
 		background-color: #ebebeb;
