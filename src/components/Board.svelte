@@ -1,5 +1,6 @@
 <!-- Board.svelte -->
 <script>
+	
 	import Item from './Item.svelte'
 	import { boards, items } from '../stores'
 	import { onMount } from 'svelte'
