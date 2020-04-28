@@ -39,7 +39,12 @@
 </script>
 
 {#if board}
-	<div class="board wrapper card">
+
+{#each _items as item (item.id)}
+
+<div class="container">
+  <div class="row">
+<div class="board wrapper card">
 		<div class="card-body">
 			<div class="meta">
 				<h5 class="card-title">
@@ -48,17 +53,16 @@
 				<span class="count text-secondary">{_items.length}</span>
 			</div>
 			<div id={board.id} class="item-list" bind:this={list}>
-			{#each _items as item (item.id)}
-				
-				<div class="card-body">
-			<div class="meta">
 				<Item
 					{item}
 					on:update={handleUpdateItem}
 					on:remove={handleRemoveItem}
 				/>
-				</div>
-		</div>
+  </div>
+</div>
+
+	
+
 			{/each}
 			</div>
 			<div class="card-action">
